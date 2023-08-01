@@ -1,0 +1,1 @@
+En este repositorio se guardarán algunos ejercicios y proyectos correspondientes al curso de JavaScript TOTAL - De Cero a Desarrollador Web en 18 días.
