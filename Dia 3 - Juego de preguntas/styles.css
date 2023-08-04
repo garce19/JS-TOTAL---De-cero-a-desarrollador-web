@@ -1,0 +1,30 @@
+body {
+    background-color: aquamarine;
+}
+
+.pregunta {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#cuenta {
+    color: brown;
+}
+
+input {
+    border: 8px solid beige;
+    margin-left:  170px;
+}
+
+#preguntas {
+    background-color: darkslategray;
+}
+
+button {
+    color: black;
+    font-weight: bold;
+    border: 3px solid ;
+    background-color: darkolivegreen;
+}

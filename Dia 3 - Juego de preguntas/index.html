@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego de Preguntas</title>
+  </head>
+  <body onload="cuentaRegresiva()">
+    <h2>
+      Tienes 30 segundos para responder estas preguntas. Que comience el juego: <span id='cuenta'></span>
+    </h2>
+    <div id="preguntas">
+        <p class="pregunta">1. ¿Cómo te llamas?</p>
+        <input type="text" id="respuesta1" />
+        <br />
+        <p class="pregunta">2. ¿Cuántos años tienes?</p>
+        <input type="text" id="respuesta2" />
+        <br />
+        <p class="pregunta">3. ¿Cuál es tu género musical favorito?</p>
+        <input type="text" id="respuesta3" />
+        <br />
+        <p class="pregunta">4. ¿Cuál es tu comida favorita?</p>
+        <input type="text" id="respuesta4" />
+        <br />
+        <p class="pregunta">5. ¿Cristiano Ronaldo o Lionel Messi?</p>
+        <input type="text" id="respuesta5" />
+        <br /><br />
+    </div>
+    <button onclick="finalizado()">Terminé!</button>
+    <br /><br />
+    <button onclick="volverAIntentar()">Volver a intentar</button>
+
+    <script>
+      let tiempoTerminado;
+      let intervaloDeTiempo;
+
+      function cuentaRegresiva() {
+        tiempoTerminado = setTimeout(tiempoCumplido, 1000 * 30);
+        intervaloDeTiempo = setInterval(menosUno, 1000);
+
+        document.getElementById('cuenta').textContent = 30;
+      }
+
+
+      function menosUno() {
+        let tiempo = document.getElementById('cuenta').textContent;
+        document.getElementById('cuenta').textContent = tiempo - 1;
+      }
+
+      function tiempoCumplido() {
+        clearInterval(intervaloDeTiempo);
+        document.getElementById('cuenta').textContent = 0;
+        alert('GAME OVER! Se acabó el tiempo. Intenta nuevamente')
+      }
+
+      function finalizado() {
+        clearTimeout(tiempoTerminado);
+        clearInterval(intervaloDeTiempo);
+
+        let fecha = new Date();
+        let respuesta1 = getElementById('respuesta1').value;
+        let respuesta2 = getElementById('respuesta2').value;
+        let respuesta3 = getElementById('respuesta3').value;
+        let respuesta4 = getElementById('respuesta4').value;
+        let respuesta5 = getElementById('respuesta5').value;
+        
+        let mensaje = fecha.toLocaleDateString('es-ES');
+        alert(mensaje)
+      }
+
+      function volverAIntentar() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
