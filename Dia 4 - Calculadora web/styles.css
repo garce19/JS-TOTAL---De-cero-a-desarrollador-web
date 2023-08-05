@@ -1,0 +1,44 @@
+#calculadora {
+    background-color: beige;
+    width: 550px;
+    height: auto;
+    margin-left: 600px;
+    margin-top: 300px;
+    border: 3px solid greenyellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;   
+}
+
+button {
+    background-color: crimson;
+    color: white;
+}
+
+.numeros {
+    padding: 5px;
+}
+
+.operacionesSimples {
+    margin-left: 220px;
+}
+
+.operacionesComplejas {
+    margin-left: 100px;
+}
+
+.redondeo {
+    padding: 5px;
+    margin-left: 190px;
+}
+
+#resultado {
+    margin-left: 0px;
+    text-align: center;
+}

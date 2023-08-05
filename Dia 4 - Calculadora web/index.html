@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora web</title>
+  </head>
+  <body>
+    <div id="calculadora">
+        <h1>Tu calculadora web</h1>
+        <hr>
+        <div class="numeros">
+          Número 1: <input type="text" class="numero" id="numero1"/> Número 2:
+          <input type="text" class="numero" id="numero2"/>
+        </div>
+        <div class="operacionesSimples">
+          <button id="btnSuma" onclick="sumar()">+</button>
+          <button id="btnResta" onclick="restar()">-</button>
+          <button id="btnMultiplicacion" onclick="multiplicar()">
+            *
+          </button>
+          <button id="btnDivision" onclick="dividir()">/</button>
+        </div>
+        <br />
+        <div class="operacionesComplejas">
+          <button id="btnRaiz" onclick="raiz()">Raíz cuadrada</button>
+          <button id="btnPotencia" onclick="potencia()">Potencia</button>
+          <button id="btnAbs" onclick="absoluto()">
+            Valor absoluto
+          </button>
+          <button id="btnRandom" onclick="randomFun()">Random</button>
+        </div>
+        <hr>
+        <h2 style="margin-left: 220px;">Resultado</h2>
+        <h3 id="resultado">0</h3>
+        <div class="redondeo">
+          <button id="btnRound" onclick="redondear()">Round</button>
+          <button id="btnFloor" onclick="redondearAbajo()">Floor</button>
+          <button id="btnCeil" onclick="redondearArriba()">Ceil</button>
+        </div>
+    </div>
+  </body>
+</html>
