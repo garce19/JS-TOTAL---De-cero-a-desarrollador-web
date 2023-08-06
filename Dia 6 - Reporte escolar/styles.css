@@ -1,0 +1,33 @@
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul li {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background-color: blanchedalmond;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    height: 40px;
+    width: auto;
+    box-shadow: 5px  3px black;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
