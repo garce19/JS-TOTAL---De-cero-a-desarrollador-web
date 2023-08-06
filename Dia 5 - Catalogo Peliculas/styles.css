@@ -1,0 +1,17 @@
+body {
+    background-color: bisque;
+}
+
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#botones {
+    padding: 5px;
+}
+
+button {
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+}
