@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: beige;
+}
+
+div {
+    padding: 50px;
+    font-size: larger;
+    text-shadow: 3px 2px wheat;
+}
+
+h1 {
+    text-shadow: 3px 2px wheat;
+    margin-top: 70px;
+}
+
+hr {
+    color: black;
+    background-color: black;
+}
+
+
