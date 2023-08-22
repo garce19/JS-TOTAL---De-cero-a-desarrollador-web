@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    margin-top: 200px;
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 40%;
+    margin-left: 30%;
+}
+
+#tituloPagina {
+    font-family: "Great Vibes", cursive; 
+    color: #d54d7b;
+    font-weight: normal;
+    text-shadow: 0 1px 1px #fff;
+}
+
+hr {
+    color: white;
+}
+
+#cotizaciones {
+    background-color: #d54d7b;
+    color: white;
+}
+
+#logo {
+    height: 180px;
+    width: 180 px;
+    border-radius: 50%;
+}
+
+#imgEspera {
+    height: 30 px;
+    width: 30px;
+    border-radius: 50%;
+    visibility: hidden;
+}
